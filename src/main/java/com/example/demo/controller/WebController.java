@@ -121,6 +121,8 @@ public class WebController {
 		fields.add("projectName");
 		fields.add("projectDuration");
 						
+		System.out.println("working");
+		
 		FilterProvider filterProvider = new SimpleFilterProvider()
 					.setFailOnUnknownId(false)
 					.addFilter("projectFilter", SimpleBeanPropertyFilter.filterOutAllExcept(fields));
